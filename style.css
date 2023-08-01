@@ -1,103 +1,40 @@
-/* Reset some default styles to start with a clean slate */
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+body
+{
+  background-color: #F7F2EA;
 }
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+footer
+{
+  background-color:  #A2BFA5;
 }
-
-/* Header */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+header
+{
+  background-color: black;
 }
-
-header h1 {
-  font-size: 2rem;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-header nav ul li {
-  margin-right: 1rem;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-/* Main content */
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.project {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.project h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-
-footer p {
-  margin-top: 1rem;
-}
-
-/* Social icons */
-.socials {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.socials a {
-  color: #fff;
-  margin-right: 0.5rem;
+.button{
+  background-color: none; 
+  border: none;
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: right; /* Float the buttons side by side */
   text-decoration: none;
 }
 
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-  
-  header nav ul {
-    flex-direction: column;
-  }
-  
-  header nav ul li {
-    margin-bottom: 0.5rem;
-  }
+.button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.button:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+
+/* Add a background color on hover */
+.button:hover {
+  background-color: #A2BFA5;
+}
+.space{
+  height:100px;
 }
