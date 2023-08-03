@@ -34,6 +34,7 @@ header
 /* Add a background color on hover */
 .button:hover {
   background-color: #A2BFA5;
+  border-radius: 6px;
 }
 .space{
   height:100px;
